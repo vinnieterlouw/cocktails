@@ -9,7 +9,7 @@ export default function Cocktail({ strCategory }) {
     const category = strCategory;
     const categoryNoSpace = category.replace(/ /g, "_");
     setCategory(encodeURIComponent(categoryNoSpace));
-  }, []);
+  }, [strCategory]);
 
   return (
     <div>

@@ -18,7 +18,7 @@ export default function CocktailImage() {
     getImage();
   });
 
-  // console.log("what is images", images);
+  console.log("what is images", images);
 
   return images ? (
     <div>
