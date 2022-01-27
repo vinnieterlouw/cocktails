@@ -9,7 +9,7 @@ function CategoryPage({ strCategory }) {
     const cockResponse = await axios.get(
       "https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list"
     );
-    //console.log(cockResponse.data.drinks);
+    console.log(cockResponse.data.drinks);
     setCocktailList(cockResponse.data.drinks);
   }
 

@@ -10,15 +10,15 @@ export default function CocktailImage() {
     const response = await axios.get(
       `https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${routeParams.image}`
     );
-    //console.log("what is response", response.data.drinks);
+    // console.log("what is response", response.data.drinks);
     setImages(response.data.drinks);
   }
 
   useEffect(() => {
     getImage();
-  }, []);
+  });
 
-  console.log("what is images", images);
+  // console.log("what is images", images);
 
   return images ? (
     <div>

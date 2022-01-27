@@ -12,7 +12,7 @@ function App() {
           Home
         </NavLink>
       </div>
-      <Routes className="cockStyle">
+      <Routes>
         <Route path="/" element={<CategoryPage />} />
         <Route path="/:image" element={<CocktailImage />} />
       </Routes>
